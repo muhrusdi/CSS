@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    padding: 0
+}
+
+#globalheader ul, #globalheader ol, #globalheader li, #globalheader dl,
+#globalheader dt, #globalheader dd, #globalheader h1, #globalheader h2,
+#globalheader h3, #globalheader h4, #globalheader h5, #globalheader h6,
+#globalheader p, #globalheader figure, #globalheader pre, #globalheader abbr,
+#globalheader form, #globalheader fieldset, #globalheader input, #globalheader legend {
+    margin: 0;
+    padding: 0
+}
+
+#globalheader ul, #globalheader li, #globalheader p, #globalheader h4,
+#globalheader h5 {
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1
+}
+
+#globalheader img {
+    border: none
+}
+
+#globalheader header, #globalheader nav, #globalheader figure, #globalheader figcaption {
+    display: block
+}
+
+#globalheader button {
+    font: inherit;
+    vertical-align: middle;
+    box-shadow: none
+}
+
+#globalheader button, #globalheader input {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent
+}
+
+@media print {
+    #globalheader {
+        display: none
+    }
+}
+
+
+#globalheader {
+    position: relative;
+    z-index: 9999;
+    min-width: 1010px;
+    top: 20px;
+    font-size: 18px
+}
+
+@media only screen and (max-width: 767px) {
+    #globalheader {
+        min-width: 100%;
+        width: 100%;
+        text-align: left
+    }
+}
+
+#globalheader .gh-content {
+    width: 980px;
+    background: #444;
+    background: rgba(0, 0, 0, 0.6);
+    height: 2.55556em;
+    margin: 0 auto 1em;
+    margin: 0 auto
+}
+
+@media only screen and (max-width: 767px) {
+    #globalheader .gh-content {
+        position: relative;
+        width: 95%
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    #globalheader .gh-nav {
+        position: absolute;
+        z-index: 100;
+        height: 0;
+        width: 100%;
+        top: -2.66667em;
+        left: 0;
+        overflow: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        background: rgba(0, 0, 0, 0.6);
+        -webkit-transition: top 0s 0.4s, height 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99), z-index 0.1s 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        transition: top 0s 0.4s, height 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99), z-index 0.1s 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99)
+    }
+
+    #globalheader .gh-nav:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 0.05556em;
+        background: rgba(255, 255, 255, 0.2)
+    }
+}
+
+.gh-show-nav #globalheader .gh-nav {
+    top: 2.66667em
+}
+
+@media only screen and (max-width: 767px) {
+    .gh-show-nav #globalheader .gh-nav {
+        z-index: 300;
+        height: 2.66667em;
+        -webkit-transition: height 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99), z-index 0.1s 0s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        transition: height 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99), z-index 0.1s 0s cubic-bezier(0.4, 0.01, 0.165, 0.99)
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .gh-immediate #globalheader .gh-nav {
+        -webkit-transition-duration: 0s;
+        transition-duration: 0s;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    #globalheader .gh-nav-view {
+        width: 102%;
+        white-space: nowrap;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch
+    }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 767px) {
+    #globalheader .gh-nav-view {
+        display: inline-block
+    }
+}
+
+#globalheader .gh-nav-list {
+    position: relative;
+    z-index: 1;
+    height: 2.55556em;
+    cursor: default;
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+
+#globalheader .gh-nav-list:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
+
+#globalheader.gh-oldie .gh-nav-list:after {
+    display: inline;
+    zoom: 1
+}
+
+@media only screen and (max-width: 767px) {
+    #globalheader .gh-nav-list {
+        min-width: 100%;
+        width: auto;
+        height: 2.66667em;
+        padding-bottom: 0.44444em;
+        margin: 0
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    #globalheader .gh-nav-list:after {
+        display: none
+    }
+}
+
+#globalheader .gh-nav-list .gh-tab {
+    margin: 0;
+    list-style-type: none;
+    height: 2.55556em;
+    vertical-align: top;
+    display: inline-block
+}
+
+#globalheader.gh-oldie .gh-nav-list .gh-tab {
+    *display: inline;
+    zoom: 1
+}
+
+#globalheader.gh-oldie .gh-nav-list .gh-tab.gh-tab-apple .gh-tab-link {
+    padding: 0;
+    *padding: 0 20px 0 0
+}
+
+@media only screen and (max-width: 767px) {
+    #globalheader .gh-tab {
+        opacity: 0;
+        -webkit-transform: translate3d(-8.33333em, 0, 0);
+        -ms-transform: translate3d(-8.33333em, 0, 0);
+        transform: translate3d(-8.33333em, 0, 0);
+        -webkit-transition: opacity 0.2s 0 ease, -webkit-transform 0s 0.4s ease;
+        transition: opacity 0.2s 0 ease, transform 0s 0.4s ease
+    }
+}
+
+#globalheader .gh-tab-link {
+    position: relative;
+    display: block;
+    opacity: 1;
+    height: 2.55556em;
+    padding: 0 10px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 1.11111em;
+    background-size: auto 20px\0;
+    outline-offset: -0.22222em;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1)
+}
+
+#globalheader.gh-oldie .gh-tab-link {
+    padding-right: 0;
+    *padding: 0 34px 0 0;
+    *overflow: hidden
+}
+
+#globalheader .gh-tab-link:hover {
+    opacity: 0.65;
+    filter: alpha(opacity=65)
+}
+
+#globalheader .gh-tab-link .gh-tab-inner {
+    position: relative;
+    display: block;
+    height: 2.55556em;
+    top: 13px;
+}
+
+
+
+

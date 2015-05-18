@@ -1,0 +1,31 @@
+
+@font-face {
+	font-family:'San Francisco';
+	font-weight:100;
+	src:url("../fonts/San-Francisco-Bold.ttf") format("truetype");
+	*src:url('');
+}
+@font-face {
+	font-family:'San Francisco';
+	font-weight:200;
+	src:url("../fonts/San-Francisco-Medium.ttf") format("truetype");
+	*src:url('');
+}
+@font-face {
+	font-family:'San Francisco';
+	font-weight:300;
+	src:url("../fonts/San-Francisco-Regular.ttf") format("truetype");
+	*src:url('');
+}
+@font-face {
+	font-family:'San Francisco';
+	font-weight:400;
+	src:url("../fonts/San-Francisco-Thin.ttf") format("truetype");
+	*src:url('');
+}
+@font-face {
+	font-family:'San Francisco';
+	font-weight:500;
+	src:url("../fonts/San-Francisco-Ultralight.ttf") format("truetype");
+	*src:url('');
+}
